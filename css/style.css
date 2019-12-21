@@ -1,0 +1,129 @@
+.bars, .rev {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.mainoverlay {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 50;
+  font-size: 2em;
+  color: #9aa84c;
+  height: 0;
+  background: #4444c2;
+}
+
+.mainoverlay ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mainoverlay.overactive {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.mainoverlay li {
+  margin-bottom: 15px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.mainoverlay li:hover {
+  color: #c44514;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blueviolet;
+}
+
+.mainslide {
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mainslide .slider {
+  position: relative;
+}
+
+.mainslide .slider ul {
+  position: relative;
+  left: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mainslide .slider #next, .mainslide .slider #prev {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  color: #b2bceb;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.mainslide .slider #prev {
+  left: 25px;
+}
+
+.mainslide .slider #next {
+  right: 25px;
+}
+
+.mainslide .slider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.mainslide .slider ul li {
+  width: 800px;
+}
+
+.mainslide .slider ul li img {
+  height: 400px;
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
